@@ -16,12 +16,17 @@ Is a statement to check if conditions are true before you run a piece of code. E
 #### If
 The if statement evaluates condition.
 If condition is evaluated to True, the code inside the body of if is executed. If condition is evaluated to False, the code inside the body of if is skipped.
-
 <br>
 #### Elif 
 Elif condition is used to include multiple conditional expressions after the if condition or between the if and else conditions.
+
 #### Else 
+
 The else keyword catches anything which isn't caught by the preceding conditions.
+
+<img height="500" src="C:\Users\Prismika\PycharmProjects\pythonbasic\Day 2\If_else_elif_flowchart.png" width="800"/>
+
+
 <br>
 <br>
 Example of if, elif and else statement:
@@ -89,3 +94,36 @@ else:
     print("This is an even number.")
 ```
 #### For Loops
+
+A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).With for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+
+Example
+<br> 
+```python
+list_data = [1, 2, 3, 4, 5]
+
+#for all the num in the list_data, it will * 2 and print the output in a sequential process. 
+for num in list_data:
+    print(num * 2)
+```
+The output: 
+```
+2
+4
+6
+8
+10
+
+```
+Example 2: 
+```python
+embedded_lists = [[1, 2, 3], [4,5,6]]
+
+
+for data in embedded_lists:
+    print(data) #prints out what's currently inside the data
+    
+    #print what's currently inside data.
+    for num in data:
+        print(num)
+```
