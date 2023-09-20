@@ -24,8 +24,7 @@ Elif condition is used to include multiple conditional expressions after the if 
 
 The else keyword catches anything which isn't caught by the preceding conditions.
 
-<img height="500" src="C:\Users\Prismika\PycharmProjects\pythonbasic\Day 2\If_else_elif_flowchart.png" width="800"/>
-
+![](if_else_elif_flowchart.png)
 
 <br>
 <br>
