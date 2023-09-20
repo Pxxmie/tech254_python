@@ -30,3 +30,13 @@ print(request_bbc.status_code)
 print(request_bbc.content)
 
 bbc_content = request_bbc.content
+
+
+
+
+request_poke = requests.get("https://pokeapi.co/api/v2/pokemon/pikachu")
+
+print(request_poke.status_code)
+print(request_poke.content)
+
+bbc_content = request_poke.content
