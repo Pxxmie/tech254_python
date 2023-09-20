@@ -1,6 +1,5 @@
-# Day3 Notes
 
-## Functions
+### Functions
 
 A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.
 
@@ -8,7 +7,7 @@ A function is defined using the `def` keyword:
 
 Example
 
-```python
+```
 def print_something():  
     print(print_string)
      
@@ -22,7 +21,7 @@ Arguments are specified after the function name, inside the **parentheses ().** 
 
 Example below has a function with one argument (print_string). it then uses the ‘print’ function to output the value of the ‘print_string’ variable. 
 
-```python
+```
 def print_something(print_string):  # print_string is a placeholder variable- this turns into an argument. 
 # colon is needed as we are going to attribute code after this. 
     print(print_string)
@@ -34,7 +33,7 @@ print_something("Like this!")
 
 Another example of an argument using **f string** on a function:
 
-```python
+```
 def greeting(name):
     print(f"Hello, my name is {name}")
 
@@ -45,19 +44,19 @@ In this example, we define a function called ‘greeting’ that takes one argum
 
 Output: 
 
-```python
+```
 Hello, my name is Pris
 ```
 
 ### Return Statement
 
-The `return` keyword is to exit a function and return a value.
+The`return`keyword is to exit a function and return a value.
 
 Using a return statement in a function is good practice because it allows the function to provide a specific result back to the part that called it. This makes the code more organised and easier to understand. 
 
 Example: 
 
-```python
+```
 def addition(int1=2, int2=4):
     return int1 + int2
 
@@ -71,7 +70,7 @@ In this example, this code defines a function called `addition` .The function ta
 
 Output:
 
-```python
+```
 10
 25
 ```
@@ -86,7 +85,7 @@ When you call `‘multi_args(1, 2, 3, 4, 5,”six”)’`,  you are passing six 
 
 The `print(type(multiarge))` statement prints the type of `multiargs`, which is always <class ‘tuple’> because `*multiagrs` collects the arguments into a tuple. 
 
-```python
+```
 def multi_args(*multiargs): 
     for arg in multiargs: 
         print(arg)
@@ -97,7 +96,7 @@ multi_args(1, 2, 3, 4, 5, "six")
 
 Output: 
 
-```python
+```
 1
 2
 3
@@ -105,3 +104,16 @@ Output:
 5
 six
 ```
+
+#### Good function practices 
+
+- comment the functions-adding useful comments to explain your functions. 
+- Clear function names and clear function argument names. 
+- Keep your functions small and compact. (improves readability)- Make them do one thing if possible. 
+- Avoiding duplication 
+- Correct indentation and formatting/syntax. 
+- Function should be organised properly. 
+- Do not use function unnecessarily. 
+- Functions at the start of your code if possible. 
+- Remember the return statement! (good habit)
+- Consider using type hints.
