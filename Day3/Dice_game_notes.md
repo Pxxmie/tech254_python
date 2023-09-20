@@ -1,4 +1,3 @@
-# Untitled
 
 ### Notes for dice game
 
