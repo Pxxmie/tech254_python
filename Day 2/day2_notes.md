@@ -13,18 +13,20 @@ Is a statement to check if conditions are true before you run a piece of code. E
 - **Greater than**: a > b 
 - **Greater than or equal to**: a >= b
 
-#### If
+### If
 The if statement evaluates condition.
 If condition is evaluated to True, the code inside the body of if is executed. If condition is evaluated to False, the code inside the body of if is skipped.
 <br>
-#### Elif 
+### Elif 
 Elif condition is used to include multiple conditional expressions after the if condition or between the if and else conditions.
 
-#### Else 
+### Else 
 
 The else keyword catches anything which isn't caught by the preceding conditions.
 
 ![](if_else_elif_flowchart.png)
+<br> 
+Flowchart showing if, elif and else statements. 
 
 <br>
 <br>
@@ -57,7 +59,7 @@ All age groups can watch this movie
 ```
 
 
-#### Activity 
+### Activity 
 Adding control flow to BMI calculator.
 
 ```python
@@ -92,7 +94,7 @@ if mod > 0:
 else:
     print("This is an even number.")
 ```
-#### For Loops
+### For Loops
 
 A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).With for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
 
