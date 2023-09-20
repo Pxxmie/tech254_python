@@ -1,21 +1,21 @@
+# Untitled
+
 ### Notes for dice game
 
 Importing the random module
 
-```
+```python
 import random
-```
 
-In this first line,  I have imported the random module, which provides functions to generate random numbers.
-
-```
 def roll_dice():
     return random.randint(1, 6)
 ```
 
-Here, I have defined the function, and it uses the `.randint` function to generate a random integer  between 1 and 6 just like a dice. 
+In this first line,  I have imported the random module, which provides functions to generate random numbers.
 
-```
+Here, I have defined the function and it uses the `.randint` function to generate a random integer  between 1 and 6 just like a dice. 
+
+```python
 def dice_game():
     print("Welcome to roll the dice!")
 
@@ -24,11 +24,11 @@ def dice_game():
 
 This function sets up the entire dice game. 
 
-It starts by printing a welcome message and has an input function that allows user to enter data.
+It starts by printing a welcome message and has a input function that allows users to state whether they want to play.
 
  The user’s response is stored in the variable `play_game`
 
-```
+```python
 if play_game.lower() == "no":
         print(f"Goodbye!")
         return 0
@@ -38,45 +38,53 @@ if play_game.lower() == "no":
 
 ```
 
-so I have started off with `‘if ‘` statement to check the user’s input. If the user says no then this message is printed out and by adding the `Return 0` statement, the function can end and the user will not be asked for their name again due to the while loop.
+ I have started off with `‘if ‘` statement to check the user’s input. If the user says no then the goodbye message is printed. By adding the`return 0` statement inside the if body, the function terminates, which means the user will be not asked for their name etc.
 
-```
+Otherwise, It  prompts the user to enter their name. The print statement has an f string calling the `user_name` variable.
+
+```python
+# Start an infinite loop (until it is ended later by the player)
 while True:
-user_roll = roll_dice()
-print(f"You rolled a {user_roll}!")
+        # Roll the user's score
+        user_roll = roll_dice()
+        print(f"You rolled a {user_roll}!")
 
-bot_roll = roll_dice()
-print(f"Bot rolled a {bot_roll}!")
+        # Roll the bot's score
+        bot_roll = roll_dice()
+        print(f"Bot rolled a {bot_roll}!")
 
-if user_roll > bot_roll:
-    print("You won!")
-elif bot_roll > user_roll:
-    print("The bot won :(!")
-else:
-    print("It was a tie!")
+        # Compare the scores
+        if user_roll > bot_roll:
+            print("You won!")
+
+        elif bot_roll > user_roll:
+            print("The bot won :(!")
+
+        else:
+            print("It was a tie!")
 ```
 
-As I want the game to have a loop, the `while` creates an infinite loop, and it will keep running until a break statement is encountered. 
+As I want the game to loop until the player chooses to stop playing, the `while True` creates an infinite loop that will keep running until a break statement is encountered. 
 
-I have allocated the user and bot values to the `roll_dice` function defined earlier in order to generate a number and print the number allocated for them. 
+I have assigned the `user_roll` and `bot_roll` variables to the `roll_dice` function defined earlier to generate a random number for each. These numbers are printed for user to see.
 
-I have added a `if, elif and else` statement in order to compare the rolls to determine the winner. 
+I have added an `if, elif and else` statement to compare the rolls and determine the winner. 
 
-so if the users roll is greater than the bots , the condition is true, and it prints out `You won` to the user.  
+So, if the user roll is greater than the bot, the condition is true and it prints out `You won!` to the user.  
 
-if the first condition was not true, then it passes on to the `elif condition` which informs the user that the bot won the round. 
+If the first condition was not true, then it passes on to the `elif statement` which, if true, informs the user that the bot won the round. 
 
-finally, the `else statement`, if none of the conditions were true, it means that the users roll is not greater than the bots , vice versa. Therefore, they must be equal, In this case, the program prints “it was a tie!” to inform the user. 
+Finally, if none of the conditions were true, it means that the user roll is not greater than the bots and vice versa. Therefore, they must be equal, In this case, the program prints `it was a tie!` to inform the user. 
 
-```
+```python
 play_again = input("Would you like to play again? (yes/no)")
 
 if play_again.lower() == "no":
     break
 ```
 
-Finally, here, it's asking the user if they want to play the game again. 
+Finally, here, I added an input asking the user if they want to play the game again. 
 
-If they say no, the program encounters a `break statement`. So this statement is used to exist the enclosing loop, which in this case is the `while true` loop that controlled this game. 
+If they say no, the `break statement` terminates the while loop. 
 
 However, if they type yes, then the game will continue.
