@@ -4,7 +4,7 @@
 
 Importing the random module
 
-```python
+```
 import random
 
 def roll_dice():
@@ -13,9 +13,9 @@ def roll_dice():
 
 In this first line,  I have imported the random module, which provides functions to generate random numbers.
 
-Here, I have defined the function and it uses the `.randint` function to generate a random integer  between 1 and 6 just like a dice. 
+Here, I have defined the function, and it uses the `.randint` function to generate a random integer  between 1 and 6 just like a dice. 
 
-```python
+```
 def dice_game():
     print("Welcome to roll the dice!")
 
@@ -24,11 +24,11 @@ def dice_game():
 
 This function sets up the entire dice game. 
 
-It starts by printing a welcome message and has a input function that allows users to state whether they want to play.
+It starts by printing a welcome message and has an input function that allows users to state whether they want to play.
 
  The user’s response is stored in the variable `play_game`
 
-```python
+```
 if play_game.lower() == "no":
         print(f"Goodbye!")
         return 0
@@ -42,7 +42,7 @@ if play_game.lower() == "no":
 
 Otherwise, It  prompts the user to enter their name. The print statement has an f string calling the `user_name` variable.
 
-```python
+```
 # Start an infinite loop (until it is ended later by the player)
 while True:
         # Roll the user's score
@@ -70,13 +70,13 @@ I have assigned the `user_roll` and `bot_roll` variables to the `roll_dice` func
 
 I have added an `if, elif and else` statement to compare the rolls and determine the winner. 
 
-So, if the user roll is greater than the bot, the condition is true and it prints out `You won!` to the user.  
+So, if the user roll is greater than the bot, the condition is true, and it prints out `You won!` to the user.  
 
 If the first condition was not true, then it passes on to the `elif statement` which, if true, informs the user that the bot won the round. 
 
 Finally, if none of the conditions were true, it means that the user roll is not greater than the bots and vice versa. Therefore, they must be equal, In this case, the program prints `it was a tie!` to inform the user. 
 
-```python
+```
 play_again = input("Would you like to play again? (yes/no)")
 
 if play_again.lower() == "no":
