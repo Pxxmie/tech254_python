@@ -24,7 +24,7 @@ Elif condition is used to include multiple conditional expressions after the if 
 
 The else keyword catches anything which isn't caught by the preceding conditions.
 
-![](If_else_elif_flowchart.png)
+![](images/If_else_elif_flowchart.png)
 <br> 
 Flowchart showing if, elif and else statements. 
 

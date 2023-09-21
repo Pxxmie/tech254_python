@@ -7,7 +7,7 @@
 
 **Example:** 
 
-![](gitstatus.png)
+![](images/gitstatus.png)
 
 The screenshot shows that I am currently on the branch main and there are some changes I need to commit as well as changes that needs to be staged. I will do this before I push this repo to GitHub.
 
@@ -15,13 +15,13 @@ The screenshot shows that I am currently on the branch main and there are some c
 
 Example: 
 
-![](staged.png)
+![](images/staged.png)
 
 3) Then I will finally type the `git commit -m  ""`in order to commit my changes into the repository. 
 
 Example: 
 
-![](committed.png)
+![](images/committed.png)
 
 This shows that all my modified files have successfully been committed. 
 
@@ -51,4 +51,4 @@ This command will update the remote repository with the changes you've made in y
 
 Example:
 
-![gitpush.png](gitpush.png)
+![gitpush.png](images/gitpush.png)

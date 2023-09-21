@@ -19,7 +19,7 @@ This means that when you make changes to a file in your Git repository, it becom
 <br>
 
 Examples of modified files:
-![](modified.png)
+![](images/modified.png)
 
 ### **Staged**
 
@@ -27,7 +27,7 @@ Staging is the step before committing your changes. This is where you prepare yo
 <br>
 
 Example of staged files on git:
-![](staged.png)
+![](images/staged.png)
 
 
 ### **Committed** 
@@ -36,13 +36,13 @@ After you have staged your changes, you commit them. This means you are taking a
 <br> 
 
 Examples of committed files:
-![](commited.png)
+![](images/commited.png)
 
 
 The three main sections of a Git project: the working tree, the staging area, and the Git directory. 
 <br>
 
-![](areas.png)
+![](images/areas.png)
 <br> 
 _Working tree, staging tree and Git directory_ 
 
