@@ -3,7 +3,7 @@ import os
 import sys
 import yaml
 
-
+# Checking there is a file name passed
 if len(sys.argv) > 1:
     # Opening the file
     if os.path.exists(sys.argv[1]):
@@ -16,7 +16,7 @@ if len(sys.argv) > 1:
         exit(1)
 # No file, no usage
 else:
-    print("Usage: yaml_to_json.py <example_yaml.yaml> [example_json.json]")
+    print("Usage: json2yaml.py <source_file.json> [target_file.yaml]")
 
 # Processing the conversion
 output = json.dumps(source_content)

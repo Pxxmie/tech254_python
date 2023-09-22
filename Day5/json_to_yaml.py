@@ -35,4 +35,4 @@ else:
     target_file.close()
 
 
-    #terminal -
+# on terminal you run  python json_to_yaml.py input.json output.yaml
