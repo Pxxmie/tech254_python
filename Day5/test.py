@@ -1,7 +1,7 @@
-a = {
-    'age': 23,
-    'birth year': 1999,
-    'anniversary': 2022
-}
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
 
-print(sum(a.values()))
+  print("i is no longer less than 6")
